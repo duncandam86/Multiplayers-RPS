@@ -6,27 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Multiplayer Rock-Paper-Scissor Game</title>
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <!--css sheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
     <!--flavicon-->
     <link rel="shortcut icon" href="" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--JQuerry-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <!--moment-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 
- </head>
+</head>
 
 <body>
 
+    <div class="jumbotron">
+        <h1 class="text-center">Multiplayer Rock-Paper-Scissors</h1>
+        <h3 class="text-center">Please Enter Your Name</h3>
+        <div class="row">
+            <div class="col-md-6 text-left">Player 1:
+                <span id="player-1"></span>
+            </div>
+            <div class="col-md-6 text-right">Player 2:
+                <span id="player-1"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" id="name-input-1" placeholder="Player 1's Name">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" id="name-input-2" placeholder="Player 2's Name">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+        </div>
 
 
 
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--firebase-->
-    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
-    <!--javascripts-->
-    <script src="assets/javascripts/RPS.js"></script>
+
+
+        <script src="assets/javascripts/RPS.js"></script>
 </body>
 
 </html>
