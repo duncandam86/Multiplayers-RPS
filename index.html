@@ -13,14 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--JQuerry-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <!--firebase-->
-    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
-    <!--moment-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
 
 </head>
 
@@ -29,36 +22,83 @@
     <div class="jumbotron">
         <h1 class="text-center">Multiplayer Rock-Paper-Scissors</h1>
         <h3 class="text-center">Please Enter Your Name</h3>
+
+    </div>
+
+    <div class="container">
         <div class="row">
             <div class="col-md-6 text-left">Player 1:
                 <span id="player-1"></span>
             </div>
             <div class="col-md-6 text-right">Player 2:
-                <span id="player-1"></span>
+                <span id="player-2"></span>
             </div>
         </div>
-    </div>
-
-    <div class="container">
+        <br>
         <div class="row">
             <div class="col-md-6">
-                <div class="form-group">
-                    <input type="text" id="name-input-1" placeholder="Player 1's Name">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group" id="form-1">
+                    <input type="text" id="name-input-1" placeholder="Player-1's Name">
+                    <button id="submit-1" type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
             <div class="col-md-6">
-                    <div class="form-group">
-                        <input type="text" id="name-input-2" placeholder="Player 2's Name">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+                <div class="form-group" id="form-2">
+                    <input type="text" id="name-input-2" placeholder="Player-2's Name">
+                    <button id="submit-2" type="submit" class="btn btn-primary">Submit</button>
                 </div>
+            </div>
         </div>
-
-
-
-
-
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <button id="rockP1" value="rock">Rock</button>
+                <button id="paperP1" value="paper">Paper</button>
+                <button id="scissorP1" value="scissor">Scissor</button>
+            </div>
+            <div class="col-md-6">
+                <button id="rockP2" value="rock">Rock</button>
+                <button id="paperP2" value="paper">Paper</button>
+                <button id="scissorP2" value="scissor">Scissor</button>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <p>Select: <span id="player1-choice"></span></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <p>Select: <span id="player2-choice"></span></p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <p>Win: <span id="player1-win"></span></p>
+                    <p>Loss: <span id="player1-loss"></span></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <p>Win: <span id="player2-win"></span></p>
+                    <p>Loss: <span id="player2-loss"></span></p>
+                </div>
+            </div>
+        </div>
+        <!--JQuerry-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <!--firebase-->
+        <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+        <!--moment-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+        <!--Javascript-->
         <script src="assets/javascripts/RPS.js"></script>
 </body>
 
